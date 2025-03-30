@@ -13,8 +13,11 @@ def main(test_image, img_size):
     
     # Load the detection model with custom_objects so that the custom Lambda functions are resolved.
     detect_model = load_model(model_path, custom_objects={
+        
         'custom_create_cdm': custom_create_cdm,
+        
         'create_cdm': create_cdm,
+        
         'MSE': MeanSquaredError()
     })
     
