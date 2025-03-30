@@ -35,8 +35,8 @@ IPPROJECT/
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AYUSH-GANGWAR9/Fake-Colorized-Image-Detection.git
-   cd Fake-Colorized-Image-Detection
+   git clone https://github.com/ayushkumar912/CDM_based_Fake_Image_Detection.git
+   cd CDM_based_Fake_Image_Detection
    ```
 2. Create and activate a virtual environment:
    ```bash
