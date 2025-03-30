@@ -155,10 +155,3 @@ If you use this code in your research, please cite the original paper:
 
 ---
 
-### Notes
-- Replace `yourusername` in the clone URL with your actual GitHub username.
-- Create a `requirements.txt` file with the listed dependencies before pushing to GitHub.
-- Add a `LICENSE` file if you choose to include one (e.g., MIT License).
-- Adjust paths or arguments as needed based on your final project structure.
-
-Let me know if you'd like to tweak any section further!
