@@ -11,9 +11,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.losses import MeanSquaredError
 
 import argparse
-
 # Import functions from our modules
-
 from src.data_utils import create_data_generators
 
 from src.models import build_regeneration_network, build_detection_network, custom_create_cdm
@@ -132,6 +130,7 @@ def main(data_path, batch_size=16, img_size=(256,256), epochs_regen=50, epochs_d
     plot_roc_curve(trained_detect_model, test_gen, save_path="outputs/results/roc_curve.png")
     
     return trained_regen_model, trained_detect_model, metrics
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fake Colorized Image Detection")
@@ -155,6 +154,8 @@ if __name__ == "__main__":
             epochs_regen=args.epochs_regen,
             epochs_detect=args.epochs_detect
         )
+
+        
         print("Training complete. Evaluation metrics:")
         print(metrics)
     elif args.mode == "test":
@@ -166,6 +167,7 @@ if __name__ == "__main__":
             'custom_create_cdm': custom_create_cdm,
             'mse': MeanSquaredError()
         })
+        
         result, confidence = predict_image(detect_model, args.test_image, img_size=(args.img_size, args.img_size))
         print(f"Classification result: {result} with {confidence:.2f} confidence")
     elif args.mode == "visualize":
