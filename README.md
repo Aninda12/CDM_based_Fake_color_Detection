@@ -1,6 +1,7 @@
 # Fake Colorized Image Detection with Channel Difference Maps
 
 
+
 This repository implements a deep learning framework for detecting fake colorized images using a novel **Channel Difference Map (CDM)** based approach, as described in the paper *"[Channel Difference Based Regeneration Architecture for Fake Colorized Image Detection](https://link.springer.com/chapter/10.1007/978-3-031-11349-9_7)"* by Shruti S. Phutke and Subrahmanyam Murala (CVIP 2021). The project leverages a two-stage architecture: an autoencoder for image regeneration and a transfer learning-based detection network to classify images as real or fake colorized.
 
 ## Overview
