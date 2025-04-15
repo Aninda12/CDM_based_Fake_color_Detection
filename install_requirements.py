@@ -10,6 +10,7 @@ def install_requirements():
     except subprocess.CalledProcessError:
         print("Error installing base dependencies.")
         sys.exit(1)
+        
 
 def install_mac_specific():
     """Install optional Mac-specific dependencies if applicable"""
